@@ -5,7 +5,7 @@ package main
 
 //Melakukan import
 import (
-	"fmt"
+	"fmt"	
 	"sort"
 	"time"
 )
@@ -15,13 +15,14 @@ const jumlahSlotMaks = 10 // Kapasitas maksimum slot parkir
 
 //Memberikan Struct untuk kendaraan
 type Kendaraan struct {
-	PlatNomor  string
-	Jenis      string
+	PlatNomor  string //Menyatalan PlatNomor String
+	Jenis      string //Menyatakan Jenis String
 	WaktuMasuk time.Time
 }
 
-var slotParkir [jumlahSlotMaks]Kendaraan
+var slotParkir [jumlahSlotMaks]Kendaraan //Menyatakan variabel slotParkir
 
+//Menjalankan fungsi main
 func main() {
 	for {
 		fmt.Println("Selamat Datang di Aplikasi Parkir")
