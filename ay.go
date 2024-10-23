@@ -3,14 +3,17 @@
 
 package main
 
+//Melakukan import
 import (
 	"fmt"
 	"sort"
 	"time"
 )
 
+//Menentukan Jumlah Maksimum Slot Parkir
 const jumlahSlotMaks = 10 // Kapasitas maksimum slot parkir
 
+//Memberikan Struct untuk kendaraan
 type Kendaraan struct {
 	PlatNomor  string
 	Jenis      string
